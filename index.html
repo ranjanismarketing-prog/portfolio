@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranjani S — Digital Marketing Executive</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">RS<span class="loader-dot">.</span></div>
+      <div class="loader-bar-track"><div class="loader-bar-fill"></div></div>
+      <p class="loader-text">Loading Portfolio</p>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox">
+    <div class="lb-content">
+      <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" alt="" class="lb-img" id="lbImg" />
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">RS<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#experience" data-nav>Experience</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <a href="Ranjani_S_Resume.pdf" download class="btn-resume">
+      <i class="fa-solid fa-download"></i> Resume
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose"><i class="fa-solid fa-xmark"></i></button>
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <a href="Ranjani_S_Resume.pdf" download class="mobile-resume"><i class="fa-solid fa-download"></i> Download Resume</a>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <!-- animated background -->
+    <div class="hero-noise"></div>
+    <div class="hero-gradient-orb orb-a"></div>
+    <div class="hero-gradient-orb orb-b"></div>
+    <div class="hero-gradient-orb orb-c"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span>Digital Marketing Executive · Karaikudi, India</span>
+        </div>
+
+        <h1 class="hero-name">
+  Ranjani <em>S.</em>
+</h1>
+
+        <div class="hero-type-row">
+          <span class="type-prefix">I craft </span>
+          <span class="type-target" id="typeTarget"></span>
+          <span class="type-cursor">_</span>
+        </div>
+
+        <p class="hero-desc">
+          Turning digital channels into measurable business growth through
+          data-driven strategy, paid media mastery, and creative brand storytelling.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <span>View My Work</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="Ranjani_S_Resume.pdf" download class="btn-outline">
+            <i class="fa-solid fa-download"></i>
+            <span>Resume</span>
+          </a>
+          <a href="#contact" class="btn-ghost-link">Get In Touch →</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hstat">
+            <span class="hstat-num" data-count="1">0</span><span class="hstat-plus">+</span>
+            <span class="hstat-label">Years Exp.</span>
+          </div>
+          <div class="hstat-divider"></div>
+          <div class="hstat">
+            <span class="hstat-num" data-count="15">0</span><span class="hstat-plus">+</span>
+            <span class="hstat-label">Projects</span>
+          </div>
+          <div class="hstat-divider"></div>
+          <div class="hstat">
+            <span class="hstat-num" data-count="13">0</span><span class="hstat-plus">+</span>
+            <span class="hstat-label">Clients</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card-visual">
+          <div class="hcard-glow"></div>
+          <div class="hcard">
+            <div class="hcard-avatar">
+              <div class="avatar-ring-wrap">
+                <div class="avatar-ring"></div>
+                <div class="avatar-inner">
+                <img src="Ranjani.jpeg" alt="Ranjani S" />
+                </div>
+              </div>
+            </div>
+            <div class="hcard-info">
+              <h3>Ranjani S.</h3>
+              <p>Digital Marketing Executive</p>
+              <div class="hcard-status">
+                <span class="status-pulse"></span>
+                Available for opportunities
+              </div>
+            </div>
+            <div class="hcard-skills">
+              <span><i class="fa-brands fa-google"></i> Google Ads</span>
+              <span><i class="fa-brands fa-meta"></i> Meta Ads</span>
+              <span><i class="fa-solid fa-chart-line"></i> Analytics</span>
+              <span><i class="fa-solid fa-magnifying-glass"></i> SEO</span>
+            </div>
+          </div>
+
+          <!-- Floating chips -->
+          <div class="floating-chip chip-1">
+            <i class="fa-solid fa-certificate"></i>
+            <div>
+              <strong>Google Ads</strong>
+              <span>Certified</span>
+            </div>
+          </div>
+          <div class="floating-chip chip-2">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <div>
+              <strong>ROI Focused</strong>
+              <span>Data Driven</span>
+            </div>
+          </div>
+          <div class="floating-chip chip-3">
+            <i class="fa-solid fa-bullseye"></i>
+            <div>
+              <strong>PPC Expert</strong>
+              <span>Meta + Google</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-tag reveal-up">01 — About Me</div>
+      <div class="about-layout">
+        <div class="about-text reveal-up">
+          <h2>Driving Growth<br/><em>Through Digital Strategy</em></h2>
+          <p>
+            Highly motivated and results-driven Digital Marketing Executive with hands-on experience in SEO, social media management, and paid advertising campaigns. Skilled in developing data-driven marketing strategies to enhance brand visibility, generate leads, and improve customer engagement.
+          </p>
+          <p>
+            Proficient in Google Ads, Meta Ads Manager, and Google Analytics, with a strong understanding of keyword research, content marketing, and performance optimization. Passionate about leveraging digital platforms to drive business growth.
+          </p>
+
+          <div class="about-pills">
+            <span><i class="fa-solid fa-location-dot"></i> Karaikudi, Tamil Nadu</span>
+            <span><i class="fa-solid fa-briefcase"></i> Open to opportunities</span>
+            <span><i class="fa-solid fa-graduation-cap"></i> B.Sc. Computer Science</span>
+          </div>
+        </div>
+
+        <div class="about-right reveal-up">
+          <div class="expertise-grid">
+            <div class="exp-card">
+              <div class="exp-icon"><i class="fa-brands fa-google"></i></div>
+              <h4>Google Ads</h4>
+              <p>Search, Display & Shopping campaigns with optimized bidding</p>
+            </div>
+            <div class="exp-card">
+              <div class="exp-icon"><i class="fa-brands fa-meta"></i></div>
+              <h4>Meta Ads</h4>
+              <p>Facebook & Instagram campaigns with precision audience targeting</p>
+            </div>
+            <div class="exp-card">
+              <div class="exp-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <h4>Analytics</h4>
+              <p>GA4, Search Console & performance dashboards for insights</p>
+            </div>
+            <div class="exp-card">
+              <div class="exp-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+              <h4>SEO / SEM</h4>
+              <p>Technical audits, keyword research & on-page optimization</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-tag reveal-up">02 — Experience</div>
+      <h2 class="section-h reveal-up">Career <em>Timeline</em></h2>
+
+      <div class="timeline">
+        <div class="tl-item reveal-up">
+          <div class="tl-left">
+            <div class="tl-dot current"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-badge current-badge">Current</div>
+            <div class="tl-meta">
+              <h3>Digital Marketing Executive</h3>
+              <p class="tl-company"><i class="fa-solid fa-building"></i> Q ADS PVT LTD — Karaikudi</p>
+              <span class="tl-date"><i class="fa-regular fa-calendar"></i> Nov 2025 – Present</span>
+            </div>
+            <p class="tl-body">Leading digital marketing initiatives including SEO campaigns, paid advertising, social media strategy, and performance reporting for clients across diverse industries.</p>
+            <div class="tl-tags">
+              <span>SEO</span><span>Google Ads</span><span>Meta Ads</span><span>Analytics</span><span>Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-up">
+          <div class="tl-left">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-meta">
+              <h3>SEO Executive <span class="intern-label">Internship</span></h3>
+              <p class="tl-company"><i class="fa-solid fa-building"></i> INFINIX360 — Chennai</p>
+              <span class="tl-date"><i class="fa-regular fa-calendar"></i> Sep 2025 – Nov 2025</span>
+            </div>
+            <p class="tl-body">Conducted keyword research, on-page optimization, and technical SEO audits. Contributed to client ranking improvements and organic traffic growth.</p>
+            <div class="tl-tags">
+              <span>Keyword Research</span><span>On-Page SEO</span><span>Technical Audits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-card reveal-up">
+        <div class="edu-icon-wrap">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="edu-body">
+          <div class="edu-degree">Bachelor of Science — Computer Science</div>
+          <div class="edu-college">Alagappa Government Arts and Science College, Karaikudi</div>
+          <div class="edu-year">2022 – 2025</div>
+        </div>
+        <div class="edu-badge">Education</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-tag reveal-up">03 — Projects</div>
+      <h2 class="section-h reveal-up">Selected <em>Work</em></h2>
+
+      <div class="projects-grid">
+
+        <div class="proj-card reveal-up" data-color="rose">
+          <div class="proj-header">
+            <div class="proj-num">01</div>
+            <div class="proj-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          </div>
+          <div class="proj-shot" data-img="SEO.jpeg" data-caption="SEO & Website Optimization">
+            <img src="SEO.jpeg" alt="SEO & Website Optimization" style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:block;" />
+            <div class="proj-shot-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="proj-body">
+            <h3>SEO & Website Optimization</h3>
+            <p>Executed comprehensive SEO strategies including keyword research, on-page optimization, technical audits, and link building — delivering improved rankings and organic traffic.</p>
+            <div class="proj-tags">
+              <span>Keyword Research</span><span>On-Page SEO</span><span>Link Building</span><span>Audit</span>
+            </div>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal-up" data-color="teal">
+          <div class="proj-header">
+            <div class="proj-num">02</div>
+            <div class="proj-icon"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="proj-shot" data-img="google.jpeg" data-caption="Google Business Profile — SP Automobiles Works">
+            <img src="google.jpeg" alt="Google Business Profile" style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:block;" />
+            <div class="proj-shot-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="proj-body">
+            <h3>Google Business Profile Management</h3>
+            <p>Created and fully optimized the Google Business Profile for SP Automobiles Works, improving local search visibility and driving footfall through strategic profile management.</p>
+            <div class="proj-tags">
+              <span>GMB</span><span>Local SEO</span><span>Customer Engagement</span>
+            </div>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal-up" data-color="gold">
+          <div class="proj-header">
+            <div class="proj-num">03</div>
+            <div class="proj-icon"><i class="fa-solid fa-share-nodes"></i></div>
+          </div>
+          <div class="proj-shot" data-img="social.jpeg" data-caption="Social Media Management">
+            <img src="social.jpeg" alt="Social Media Management" style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:block;" />
+            <div class="proj-shot-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="proj-body">
+            <h3>Social Media Management</h3>
+            <p>Managed end-to-end social media presence from content calendar planning to post creation and community management, increasing brand consistency and engagement.</p>
+            <div class="proj-tags">
+              <span>Instagram</span><span>Facebook</span><span>Content Strategy</span><span>Engagement</span>
+            </div>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal-up" data-color="rose">
+          <div class="proj-header">
+            <div class="proj-num">04</div>
+            <div class="proj-icon"><i class="fa-solid fa-bullseye"></i></div>
+          </div>
+          <div class="proj-shot" data-img="ppc.jpeg" data-caption="PPC Campaign Management">
+            <img src="ppc.jpeg" alt="PPC Campaign Management" style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:block;" />
+            <div class="proj-shot-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="proj-body">
+            <h3>PPC Campaign Management</h3>
+            <p>Designed and managed Meta Ads and Google Ads campaigns with a focus on conversion optimization and maximizing ROI through A/B testing and audience segmentation.</p>
+            <div class="proj-tags">
+              <span>Meta Ads</span><span>Google Ads</span><span>A/B Testing</span><span>ROI</span>
+            </div>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal-up" data-color="teal">
+          <div class="proj-header">
+            <div class="proj-num">05</div>
+            <div class="proj-icon"><i class="fa-solid fa-handshake"></i></div>
+          </div>
+          <div class="proj-shot" data-img="client_comm.svg" data-caption="Client Communication & Reporting">
+            <img src="client_comm.svg" alt="Client Communication & Reporting" style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:block;" />
+            <div class="proj-shot-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="proj-body">
+            <h3>Client Communication & Reporting</h3>
+            <p>Led end-to-end client coordination from onboarding and regular performance reporting to lead follow-ups, ensuring clear communication and consistent satisfaction.</p>
+            <div class="proj-tags">
+              <span>CRM</span><span>Reporting</span><span>Lead Follow-up</span><span>Strategy</span>
+            </div>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-arrow"><i class="fa-solid fa-arrow-up-right"></i></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-tag reveal-up">04 — Skills</div>
+      <h2 class="section-h reveal-up">Technical <em>Expertise</em></h2>
+
+      <div class="skills-layout">
+        <div class="skills-bars-col reveal-up">
+
+          <div class="sbar-group">
+            <div class="sbar-group-label"><i class="fa-solid fa-rocket"></i> Digital Marketing</div>
+            <div class="sbar-row">
+              <span class="sbar-name">SEO / SEM</span>
+              <div class="sbar-track"><div class="sbar-fill" data-w="88"></div></div>
+              <span class="sbar-pct">88%</span>
+            </div>
+            <div class="sbar-row">
+              <span class="sbar-name">Social Media</span>
+              <div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div>
+              <span class="sbar-pct">85%</span>
+            </div>
+            <div class="sbar-row">
+              <span class="sbar-name">Content Marketing</span>
+              <div class="sbar-track"><div class="sbar-fill" data-w="80"></div></div>
+              <span class="sbar-pct">80%</span>
+            </div>
+          </div>
+
+          <div class="sbar-group">
+            <div class="sbar-group-label"><i class="fa-solid fa-chart-bar"></i> Advertising</div>
+            <div class="sbar-row">
+              <span class="sbar-name">Google Ads</span>
+              <div class="sbar-track"><div class="sbar-fill" data-w="82"></div></div>
+              <span class="sbar-pct">82%</span>
+            </div>
+            <div class="sbar-row">
+              <span class="sbar-name">Meta Ads Manager</span>
+              <div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div>
+              <span class="sbar-pct">85%</span>
+            </div>
+          </div>
+
+          <div class="sbar-group">
+            <div class="sbar-group-label"><i class="fa-solid fa-magnifying-glass"></i> Analytics & SEO</div>
+            <div class="sbar-row">
+              <span class="sbar-name">Google Analytics</span>
+              <div class="sbar-track"><div class="sbar-fill" data-w="84"></div></div>
+              <span class="sbar-pct">84%</span>
+            </div>
+            <div class="sbar-row">
+              <span class="sbar-name">Search Console</span>
+              <div class="sbar-track"><div class="sbar-fill" data-w="80"></div></div>
+              <span class="sbar-pct">80%</span>
+            </div>
+          </div>
+
+          <div class="sbar-group">
+            <div class="sbar-group-label"><i class="fa-solid fa-code"></i> CMS & Dev</div>
+            <div class="sbar-row">
+              <span class="sbar-name">WordPress</span>
+              <div class="sbar-track"><div class="sbar-fill" data-w="78"></div></div>
+              <span class="sbar-pct">78%</span>
+            </div>
+            <div class="sbar-row">
+              <span class="sbar-name">HTML / CSS</span>
+              <div class="sbar-track"><div class="sbar-fill" data-w="72"></div></div>
+              <span class="sbar-pct">72%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-tags-col reveal-up">
+          <div class="tags-block">
+            <h4>Core Skills</h4>
+            <div class="tag-cloud">
+              <span class="tag-pill">SEO</span>
+              <span class="tag-pill">SEM</span>
+              <span class="tag-pill">Google Ads</span>
+              <span class="tag-pill">Meta Ads</span>
+              <span class="tag-pill">Google Analytics</span>
+              <span class="tag-pill">Search Console</span>
+              <span class="tag-pill">Social Media Marketing</span>
+              <span class="tag-pill">Content Marketing</span>
+              <span class="tag-pill">Lead Generation</span>
+              <span class="tag-pill">Keyword Research</span>
+              <span class="tag-pill">Link Building</span>
+              <span class="tag-pill">WordPress</span>
+              <span class="tag-pill">A/B Testing</span>
+              <span class="tag-pill">CRM</span>
+              <span class="tag-pill">Performance Reporting</span>
+            </div>
+          </div>
+
+          <div class="lang-block">
+            <h4>Languages</h4>
+            <div class="lang-row">
+              <span class="lang-name">English</span>
+              <div class="lang-dots">
+                <span class="ldot active"></span><span class="ldot active"></span>
+                <span class="ldot active"></span><span class="ldot active"></span><span class="ldot active"></span>
+              </div>
+              <span class="lang-level">Native</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Tamil</span>
+              <div class="lang-dots">
+                <span class="ldot active"></span><span class="ldot active"></span>
+                <span class="ldot active"></span><span class="ldot active"></span><span class="ldot active"></span>
+              </div>
+              <span class="lang-level">Native</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-tag reveal-up">05 — Contact</div>
+      <h2 class="section-h reveal-up">Let's <em>Connect</em></h2>
+      <p class="contact-lead reveal-up">Open to new opportunities, collaborations, and conversations. Feel free to reach out — I'd love to hear from you.</p>
+
+      <div class="contact-layout">
+        <div class="contact-left reveal-up">
+          <a href="mailto:ranjanismarketing@gmail.com" class="ccard">
+            <div class="ccard-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="ccard-text">
+              <span class="ccard-label">Email</span>
+              <span class="ccard-val">ranjanismarketing@gmail.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right ccard-ext"></i>
+          </a>
+          <a href="tel:+918870559618" class="ccard">
+            <div class="ccard-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="ccard-text">
+              <span class="ccard-label">Phone</span>
+              <span class="ccard-val">+91 88705 59618</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right ccard-ext"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/s-ranjani-8bb8962a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="ccard">
+            <div class="ccard-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="ccard-text">
+              <span class="ccard-label">LinkedIn</span>
+              <span class="ccard-val">Connect on LinkedIn</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right ccard-ext"></i>
+          </a>
+          <div class="ccard no-hover">
+            <div class="ccard-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="ccard-text">
+              <span class="ccard-label">Location</span>
+              <span class="ccard-val">Karaikudi, Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right reveal-up">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" placeholder="Ranjani S" required />
+              </div>
+              <div class="form-field">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" placeholder="hello@email.com" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" placeholder="What's this about?" />
+            </div>
+            <div class="form-field">
+              <label for="fmsg">Message</label>
+              <textarea id="fmsg" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-w">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-gradient"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">RS<span class="dot">.</span></div>
+          <p class="footer-tagline">Crafting digital growth through strategy,<br/>data & creative storytelling.</p>
+        </div>
+
+        <div class="footer-nav">
+          <div class="fn-col">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="fn-col">
+            <h5>Expertise</h5>
+            <ul>
+              <li><a href="#skills">Google Ads</a></li>
+              <li><a href="#skills">Meta Ads</a></li>
+              <li><a href="#skills">SEO / SEM</a></li>
+              <li><a href="#skills">Analytics</a></li>
+              <li><a href="#skills">Content Strategy</a></li>
+            </ul>
+          </div>
+          <div class="fn-col">
+            <h5>Get In Touch</h5>
+            <ul>
+              <li><a href="mailto:ranjanismarketing@gmail.com">Email Me</a></li>
+              <li><a href="tel:+918870559618">Call Me</a></li>
+              <li><a href="https://www.linkedin.com/in/s-ranjani-8bb8962a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a></li>
+              <li><a href="Ranjani_S_Resume.pdf" download>Download Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Ranjani S. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="mailto:ranjanismarketing@gmail.com" class="fsoc" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/s-ranjani-8bb8962a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="fsoc" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/ranjanismarketing-prog" target="_blank" class="fsoc" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="footer-made">Made with <i class="fa-solid fa-heart"></i> in Karaikudi</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
